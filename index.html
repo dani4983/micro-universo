@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MicroUniverso</title>
+    <!--Custom-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+        
+
+       <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 offset-1">
+                        <img class="mt-1" name="microUniverso" width="100%">
+                </div>
+            </div>
+       </div>
+
+
+        <script>
+                window.addEventListener('load', function() {
+                    
+                    var imagenes = [];
+        
+                    imagenes[0] = './img/universo1.jpg';
+                    imagenes[1] = './img/universo2.jpg';
+                    imagenes[2] = './img/universo3.jpg';
+                    imagenes[3] = './img/universo4.jpg';
+                    imagenes[4] = './img/universo5.jpg';
+                    imagenes[5] = './img/universo6.jpg';
+                    imagenes[6] = './img/universo7.jpg';
+                    imagenes[7] = './img/universo8.jpg';
+                    imagenes[8] = './img/universo9.jpg';
+                    imagenes[9] = './img/universo10.jpg';
+                    imagenes[10] = './img/universo11.jpg';
+                    imagenes[11] = './img/universo12.jpg';
+                    imagenes[12] = './img/universo13.jpg';
+                    imagenes[13] = './img/universo14.jpg';
+                    imagenes[14] = './img/universo15.jpg';
+                    imagenes[15] = './img/universo16.jpg';
+        
+                    var indiceImagenes = 0;
+                    var tiempo = 180;
+        
+                    function cambiarImagenes() {
+                        document.microUniverso.src = imagenes[indiceImagenes];
+        
+                        if (indiceImagenes < 15) {
+                            indiceImagenes++;
+                        } else {
+                            indiceImagenes = 0
+                        }
+        
+                     }
+        
+                   setInterval(cambiarImagenes, tiempo);
+        
+                    
+                });
+            
+            
+            </script>
+        
+        
+    
+</body>
+</html>
